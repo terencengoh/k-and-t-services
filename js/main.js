@@ -47,12 +47,16 @@
     var requested = (params.get("service") || hash || "").toLowerCase();
     var serviceMap = {
       audit: "Free sales-presence audit",
-      website: "Website building",
-      websites: "Website building",
-      "local-growth": "Local business growth",
-      local: "Local business growth",
-      operations: "Small business problem-solving",
-      "problem-solving": "Small business problem-solving"
+      website: "Website design",
+      websites: "Website design",
+      seo: "Local SEO",
+      "local-growth": "Local SEO",
+      local: "Local SEO",
+      ads: "Online advertising",
+      advertising: "Online advertising",
+      tech: "Tech and operations help",
+      operations: "Tech and operations help",
+      "problem-solving": "Tech and operations help"
     };
     if (service && serviceMap[requested]) {
       service.value = serviceMap[requested];
